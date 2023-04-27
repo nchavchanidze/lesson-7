@@ -1,0 +1,156 @@
+body {
+	background-color: #ECF8FE;
+}
+
+a:link {
+	color: red !important;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: pink;
+}
+
+a:active {
+	color: blue;
+}
+
+.p-box {
+/*	width: 300px;*/
+	height: 200px;
+	background-color: darkblue;
+}
+
+.p-box p {
+	color: white;
+	font-size: 18px;
+	width: 300px;
+	text-shadow: 3px 5px yellow;
+}
+
+
+/*.p-box:hover {
+	background-color: red;
+}*/
+
+/*.p-box:hover p {
+	color: green;
+	font-size: 22px;
+}*/
+
+.p-box p::first-letter {
+	font-size: 28px;
+	color: red;
+}
+
+.p-box p::first-line {
+	font-size: 22px;
+	background-color: yellow;
+	color: #000;
+}
+
+h1::first-letter {
+	font-size: 50px;
+	color: red;
+}
+
+.p-box-2 {
+	margin-top: 50px;
+	position: relative;
+}
+
+.p-box-2 p::before {
+/*	content: url('https://cdn-icons-png.flaticon.com/512/4436/4436481.png');*/
+	content: "◆";
+	width: 35px;
+	height: 35px;
+	display: block;
+	background-color: blue;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.p-box-2 p::after {
+	content: "Hello";
+/*	width: 35px;*/
+/*	height: 35px;*/
+/*	display: block;*/
+	background-color: red;
+	font-size: 35px;
+	color: white;
+	margin-left: 60px;
+	padding: 10px;
+}
+
+ul {
+	background-color: yellow;
+	display: inline-block;
+	vertical-align: top;
+}
+
+ul li::marker {
+	color: green;
+	font-size: 50px;
+}
+
+ol {
+	background-color: lightgreen;
+	display: inline-block;
+	vertical-align: top;
+}
+
+ol li::marker {
+	color: red;
+	font-size: 30px;
+}
+
+h1::selection {
+	color: blue;
+	background-color: yellow;
+}
+
+.card {
+	margin-top: 100px;
+	width: 360px;
+	background-color: white;
+	border-radius: 6px;
+	margin-left: 100px;
+	box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card .img-box {
+	width: 100%;
+	position: relative;
+}
+
+.card .img-box p {
+	position: absolute;
+	top: 29px;
+	left: 37px;
+	color: white;
+}
+
+.card .img-box img {
+	width: 100%;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.card .card-p {
+	margin-top: 24px;
+	padding: 0 40px 40px 40px;
+}
+
+.card .card-p .upload-time {
+	margin-top: 37px;	
+}
+
+.upload-time i {
+	font-size: 40px;
+	color: red;
+}
